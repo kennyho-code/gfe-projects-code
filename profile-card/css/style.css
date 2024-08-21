@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);}
+
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Implementation */
+.inner{
+  background-color: #fff;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+  border-radius: 8px;
+}
+
+.person h1 {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.person p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #525252;
+}
+
+blockquote p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #525252;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+  background: none;
+  outline: inherit;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+}
+
+/* Size classes */
+.button--size-lg {
+  height: 44px;
+  padding: 10px 16px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
+
+
+.button--primary {
+  background-color: #4338ca;
+  width: 100%;
+  padding: 8px 0px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+}
+.button--primary:hover,
+.button--primary:focus {
+  background: #3730a3;
+}
+
+.button--primary:disabled {
+  background: #f5f5f5;
+  box-shadow: none;
+  color: #a3a3a3;
+  pointer-events: none;
+}
+
+.footer a{
+  background-color:  #4338ca;
+  padding: 8px;
+  border-radius: 8px;
+  color: #fff;
+}
