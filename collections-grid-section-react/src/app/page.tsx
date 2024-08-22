@@ -19,29 +19,41 @@ type GfeImage = {
 export default async function Home() {
   const images = await getImages();
   return (
-    <main className="flex flex-col items-center justify-center w-screen  ">
-      <div className="max-w-[704px] max-h-[580px]">
+    <main className="flex flex-col items-center justify-center">
+      <div className="max-h-[648px] md:max-w-[704px] md:max-h-[580px] px-4">
         <h1 className="font-bold text-2xl mb-6">Our Collections</h1>
-
         <div className="grid md:grid-cols-2 md:grid-rows-2 gap-4">
-          <div className="row-span-2 bg-purple-50">
+          <figure className="row-span-2 bg-purple-50 relative">
             <img
               src={images[0].image_url}
-              className="max-w-[594px] h-[580px] w-full object-cover rounded-lg"
+              className="max-w-[594px] md:h-[580px] w-full object-cover rounded-lg"
             />
-          </div>
-          <div className="md:row-span-1 ">
+            <figcaption className="absolute bottom-2 left-4">
+              <h2 className="font-extralight text-white">{images[0].name}</h2>
+              <p className="font-medium text-white">{images[0].description}</p>
+            </figcaption>
+          </figure>
+
+          <figure className="md:row-span-1 relative">
             <img
               src={images[1].image_url}
               className="max-w-[594px] h-[337px] md:h-[280px] w-full object-cover rounded-lg"
             />
-          </div>
-          <div className="md:row-span-1">
+            <figcaption className="absolute bottom-2 left-4">
+              <h2 className="font-extralight text-white">{images[1].name}</h2>
+              <p className="font-medium text-white">{images[1].description}</p>
+            </figcaption>
+          </figure>
+          <figure className="md:row-span-1 relative">
             <img
               src={images[2].image_url}
               className="max-w-[594px] h-[337px] md:h-[280px] w-full object-cover rounded-lg"
             />
-          </div>
+            <figcaption className="absolute bottom-2 left-4">
+              <h2 className="font-extralight text-white">{images[2].name}</h2>
+              <p className="font-medium text-white">{images[2].description}</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </main>
