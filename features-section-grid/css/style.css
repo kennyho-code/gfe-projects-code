@@ -71,7 +71,13 @@ body {
   font-weight: 600px;
   line-height: 28px;
   font-size: 20px;
+}
 
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  max-height: 180px;
 }
 
 @media(min-width: 768px) {
