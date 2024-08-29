@@ -58,8 +58,8 @@ export default function SettingsPage() {
     // make an api call here...to save the settings
   }
   return (
-    <main className="min-h-screen flex justify-center">
-      <div className="p-4 mt-12">
+    <main className="min-h-screen flex justify-center ">
+      <div className="p-4 mt-12 w-full max-w-[1200px]">
         <div className="flex flex-col gap-2">
           <h1 className="font-bold text-xl">Manage Your Notifications</h1>
           <p className="text-gray-500">
@@ -76,11 +76,11 @@ export default function SettingsPage() {
           <div className="my-4">
             <hr />
           </div>
-          <div className="flex flex-col gap-4 mt-4">
+          <div className="flex flex-col gap-4 mt-4 ">
             {settings.map((setting) => (
               <span className="flex justify-between gap-4" key={setting.label}>
                 <div className="text-gray-600">{setting.label}</div>
-                <div className="flex gap-4">
+                <div className="flex gap-8 md:gap-16">
                   <Switch
                     onClick={() => {
                       toggleNewSettings(setting.label, "push");
