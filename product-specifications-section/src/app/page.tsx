@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
 type Tab = "Sustainability" | "Comfort" | "Durability" | "Versatility";
 
@@ -38,44 +38,40 @@ export default function Home() {
         </p>
       </header>
       <div>
-        <ul className="flex gap-8">
-          <li>
-            <button
-              className={clsx(
-                currentTab === "Sustainability" && "text-blue-700",
-                "border-2 inline-flex justify-center items-center px-4 py-2"
-              )}
+        <ul className="flex overflow-hidden mb-4 border-b-2 border-neutral-300">
+          <span className="z-10">
+            <TabButton
+              active={currentTab === "Sustainability"}
               onClick={() => setCurrentTab("Sustainability")}
             >
               Sustainability
-            </button>
-          </li>
-          <li>
-            <button
-              className={clsx(currentTab === "Comfort" && "text-blue-700")}
+            </TabButton>
+          </span>
+          <span className="z-10">
+            <TabButton
+              active={currentTab === "Comfort"}
               onClick={() => setCurrentTab("Comfort")}
             >
               Comfort
-            </button>
-          </li>
-          <li>
-            <button
-              className={clsx(currentTab === "Durability" && "text-blue-700")}
+            </TabButton>
+          </span>
+          <span className="z-10">
+            <TabButton
+              active={currentTab === "Durability"}
               onClick={() => setCurrentTab("Durability")}
             >
               Durability
-            </button>
-          </li>
-          <li>
-            <button
-              className={clsx(currentTab === "Versatility" && "text-blue-700")}
+            </TabButton>
+          </span>
+          <span className="z-10">
+            <TabButton
+              active={currentTab === "Versatility"}
               onClick={() => setCurrentTab("Versatility")}
             >
               Versatility
-            </button>
-          </li>
+            </TabButton>
+          </span>
         </ul>
-        <hr className="h-1 w-full bg-gray-200 mt-2 mb-2" />
         {renderTab()}
       </div>
     </main>
@@ -83,97 +79,175 @@ export default function Home() {
 }
 
 function TabButton({
+  active,
   onClick,
   className,
+  children,
 }: {
+  active: boolean;
   onClick: () => void;
-  className: string;
+  className?: string;
+  children: ReactNode;
 }) {
   return (
     <button
       className={clsx(
-        "border-2 inline-flex justify-center items-center px-4 py-2",
+        "inline-flex justify-center items-center px-4 py-2 transition",
+        active && "text-blue-700 border border-blue-700 border-x-0 border-t-0",
         className
       )}
       onClick={onClick}
     >
-      Sustainability
+      {children}
     </button>
   );
 }
 
 function SustainabilityTab() {
   return (
-    <div className="flex flex-col lg:flex-row gap-4">
-      <img src="/black-mobile.jpg" />
-      <h2 className="text-xl">Uncompromised Comfort</h2>
-      <p className="font-light">
-        With our sustainable approach, we curate clothing that makes a statement
-        of care—care for the planet, and for the art of fashion.
-      </p>
-      <ul className="grid md:grid-cols-2 gap-8">
-        <li className="flex gap-2">
-          <span>😀</span>
-          <span>Ergonomic Fits</span>
-        </li>
-        <li className="flex gap-2">
-          <span>😍</span>
-          <span>Soft-to-the-Touch Fabrics</span>
-        </li>
-        <li className="flex gap-2">
-          <span>🤮</span>
-          <span>Breathable Weaves</span>
-        </li>
-        <li className="flex gap-2">
-          <span>🥶</span>
-          <span>Thoughtful Design</span>
-        </li>
-      </ul>
+    <div className="flex flex-col lg:flex-row gap-6">
+      <picture>
+        <source media="(min-width: 768px)" srcset="/yellow-tablet.jpg" />
+        <source media="(min-width: 1024px)" srcset="/yellow-desktop.jpg" />
+        <img src="/yellow-mobile.jpg" alt="Black abstract image" />
+      </picture>
+      <div className="flex flex-col gap-4">
+        <h2 className="text-2xl">Eco-Friendly Choice</h2>
+        <p className="font-light">
+          With our sustainable approach, we curate clothing that makes a
+          statement of care—care for the planet, and for the art of fashion.
+        </p>
+        <ul className="grid md:grid-cols-2 gap-8">
+          <li className="flex gap-2">
+            <span>😀</span>
+            <span>Recycled Materials</span>
+          </li>
+          <li className="flex gap-2">
+            <span>😍</span>
+            <span>Low Impact Dye</span>
+          </li>
+          <li className="flex gap-2">
+            <span>🤮</span>
+            <span>Carbon Neutral</span>
+          </li>
+          <li className="flex gap-2">
+            <span>🥶</span>
+            <span>Water Conservation</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
 
 function ComfortTab() {
   return (
-    <div className="flex flex-col">
-      <img src="/black-mobile.jpg" />
-      <h2 className="text-2xl">Eco-Friendly Choice</h2>
-      <ul>
-        <li>Ergonomic Fits</li>
-        <li>Soft-to-the-Touch Fabrics</li>
-        <li>Breathable Weaves</li>
-        <li>Thoughtful Design</li>
-      </ul>
+    <div className="flex flex-col lg:flex-row gap-6">
+      <picture>
+        <source media="(min-width: 768px)" srcset="/black-tablet.jpg" />
+        <source media="(min-width: 1024px)" srcset="/black-desktop.jpg" />
+        <img src="/black-mobile.jpg" alt="Black abstract image" />
+      </picture>
+      <div className="flex flex-col gap-4">
+        <h2 className="text-2xl">Uncompromised Comfort</h2>
+        <p className="font-light">
+          Our garments are a sanctuary of softness, tailored to drape gracefully
+          and allow for freedom of movement.
+        </p>
+        <ul className="grid md:grid-cols-2 gap-8">
+          <li className="flex gap-2">
+            <span>😀</span>
+            <span>Ergonomic Fits</span>
+          </li>
+          <li className="flex gap-2">
+            <span>😍</span>
+            <span>Soft-to-the-Touch Fabrics</span>
+          </li>
+          <li className="flex gap-2">
+            <span>🤮</span>
+            <span>Breathable Weaves</span>
+          </li>
+          <li className="flex gap-2">
+            <span>🥶</span>
+            <span>Thoughtful Design</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
 
 function VersatilityTab() {
   return (
-    <div className="flex flex-col lg:flex-row">
-      <img src="/black-mobile.jpg" />
-      <h2>Uncompromised Comfort</h2>
-      <ul>
-        <li>Ergonomic Fits</li>
-        <li>Soft-to-the-Touch Fabrics</li>
-        <li>Breathable Weaves</li>
-        <li>Thoughtful Design</li>
-      </ul>
+    <div className="flex flex-col lg:flex-row gap-6">
+      <picture>
+        <source media="(min-width: 768px)" srcset="/clothes-tablet.jpg" />
+        <source media="(min-width: 1024px)" srcset="/clothes-desktop.jpg" />
+        <img src="/clothes-mobile.jpg" alt="Black abstract image" />
+      </picture>
+      <div className="flex flex-col gap-4">
+        <h2 className="text-2xl">Versatile by Design</h2>
+        <p className="font-light">
+          Our pieces are a celebration of versatility, offering a range of
+          styles that are as perfect for a business meeting as they are for a
+          casual brunch.
+        </p>
+        <ul className="grid md:grid-cols-2 gap-8">
+          <li className="flex gap-2">
+            <span>😀</span>
+            <span>Adaptive Styles</span>
+          </li>
+          <li className="flex gap-2">
+            <span>😍</span>
+            <span>Functional Fashion</span>
+          </li>
+          <li className="flex gap-2">
+            <span>🤮</span>
+            <span>Timeless Aesthetics</span>
+          </li>
+          <li className="flex gap-2">
+            <span>🥶</span>
+            <span>Mix-and-Match Potential</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
 
 function DurabilityTab() {
   return (
-    <div className="flex flex-col lg:flex-row">
-      <img src="/black-mobile.jpg" />
-      <h2>Uncompromised Comfort</h2>
-      <ul>
-        <li>Ergonomic Fits</li>
-        <li>Soft-to-the-Touch Fabrics</li>
-        <li>Breathable Weaves</li>
-        <li>Thoughtful Design</li>
-      </ul>
+    <div className="flex flex-col lg:flex-row gap-6">
+      <picture>
+        <source media="(min-width: 768px)" srcset="/chair-tablet.jpg" />
+        <source media="(min-width: 1024px)" srcset="/chair-desktop.jpg" />
+        <img src="/chair-mobile.jpg" alt="Black abstract image" />
+      </picture>
+      <div className="flex flex-col gap-4">
+        <h2 className="text-2xl">Built to Last</h2>
+        <p className="font-light">
+          Here’s to apparel that you can trust to look as good as new, wear
+          after wear, year after year.
+        </p>
+        <ul className="grid md:grid-cols-2 gap-8">
+          <li className="flex gap-2">
+            <span>😀</span>
+            <span>Reinforced Construction</span>
+          </li>
+          <li className="flex gap-2">
+            <span>😍</span>
+            <span>Quality Control</span>
+          </li>
+          <li className="flex gap-2">
+            <span>🤮</span>
+            <span>Material Resilience</span>
+          </li>
+          <li className="flex gap-2">
+            <span>🥶</span>
+            <span>Warranty and Repair</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
