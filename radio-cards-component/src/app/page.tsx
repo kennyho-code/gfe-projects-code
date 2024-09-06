@@ -1,63 +1,121 @@
 "use client";
-import { useState } from "react";
+import { InputHTMLAttributes, useState } from "react";
+
+function clsx(...classNames: any[]) {
+  return classNames.filter(Boolean).join(" ");
+}
 
 export default function Home() {
-  const [checkedItems, setCheckedItems] = useState(Array(3).fill(false));
-  function toggleCheckedItem(idx: number) {
-    const newCheckedItems = [...checkedItems];
-    newCheckedItems[idx] = !newCheckedItems[idx];
-    setCheckedItems(newCheckedItems);
-  }
+  const [activeElement, setActiveElement] = useState<null | string>(null);
+
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center ">
       <div>
-        <form>
-          <fieldset className="flex flex-col">
-            <div>
-              <input
-                className="hidden"
-                checked={checkedItems[0]}
-                onClick={() => toggleCheckedItem(0)}
-                id="one"
-                type="radio"
-                value={1}
-              />
-              <label htmlFor="one">One</label>
-            </div>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            console.log(e.currentTarget.value);
+          }}
+        >
+          <fieldset className="flex flex-col gap-5">
+            <RadioInput
+              onClick={() => {
+                setActiveElement("1");
+              }}
+              checked={activeElement === "1"}
+              value="1"
+            />
 
-            <div>
-              <input
-                onClick={() => toggleCheckedItem(1)}
-                checked={checkedItems[1]}
-                id="two"
-                type="radio"
-                value={2}
-              />
-              <label htmlFor="two">Two</label>
-            </div>
+            <RadioInput
+              checked={activeElement === "2"}
+              onClick={() => {
+                setActiveElement("2");
+              }}
+              value="2"
+            />
 
-            <div>
-              <input
-                onClick={() => toggleCheckedItem(2)}
-                checked={checkedItems[2]}
-                id="three"
-                type="radio"
-                value={3}
-              />
-              <label htmlFor="three">Three</label>
-            </div>
+            <RadioInput
+              checked={activeElement === "3"}
+              onClick={() => {
+                setActiveElement("3");
+              }}
+              value="3"
+            />
           </fieldset>
+
+          <button
+            className="bg-blue-50 border-2 rounded-lg px-4 py-2"
+            type="submit"
+          >
+            {" "}
+            Submit
+          </button>
         </form>
       </div>
+
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          console.log(e.currentTarget.value);
+        }}
+      >
+        <fieldset>
+          <legend>Please select your preferred contact method:</legend>
+          <div>
+            <input
+              type="radio"
+              id="contactChoice1"
+              name="contact"
+              value="email"
+            />
+            <label htmlFor="contactChoice1">Email</label>
+
+            <input
+              type="radio"
+              id="contactChoice2"
+              name="contact"
+              value="phone"
+            />
+            <label htmlFor="contactChoice2">Phone</label>
+
+            <input
+              type="radio"
+              id="contactChoice3"
+              name="contact"
+              value="mail"
+            />
+            <label htmlFor="contactChoice3">Mail</label>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
     </div>
   );
 }
 
-function RadioInput() {
+function RadioInput({
+  onClick,
+  checked,
+  value,
+  ...props
+}: {
+  onClick: () => void;
+  checked: boolean;
+  value: string;
+  props?: InputHTMLAttributes<HTMLInputElement>;
+}) {
   return (
-    <div>
-      <input id="one" type="radio" value={1} />
-      <label htmlFor="one">One</label>
-    </div>
+    <input
+      value={value}
+      onClick={onClick}
+      type="radio"
+      className={clsx(
+        " caret-transparent inline-flex text-center justify-center items-center cursor-pointer border-2 px-4 py-2",
+        checked && "border-blue-600"
+      )}
+      {...props}
+    />
   );
 }
