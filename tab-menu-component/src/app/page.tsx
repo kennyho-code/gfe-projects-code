@@ -100,6 +100,7 @@ function TabMenu({
           </TabButton>
         ))}
       </div>
+
       <div>
         {items.map((item) => (
           <span key={item.value}>
@@ -151,8 +152,8 @@ function TabButton({
       role="tab"
       onClick={onClick}
       className={[
-        "border-2 rounded-lg px-4 py-2",
-        isActive && "font-bold",
+        "px-4 py-2 w-full border-b-2 border-gray-500",
+        isActive && "font-bold border-b-2 border-blue-400",
         className,
       ]
         .filter(Boolean)
