@@ -12,7 +12,7 @@ export default function Home() {
   );
 }
 
-function clsx(...classnames) {
+function clsx(...classnames: any[]) {
   return classnames.filter(Boolean).join(" ");
 }
 
@@ -23,7 +23,7 @@ function ToggleComponent({
 }: {
   onClick: () => void;
   pressed?: boolean;
-  size: "sm" | "lg";
+  size?: "sm" | "lg";
 }) {
   const sm = "w-[36px] h-[20px]";
   const lg = "w-[44px] h-[22px]";
