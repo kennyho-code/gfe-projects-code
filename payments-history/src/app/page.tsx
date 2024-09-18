@@ -8,7 +8,7 @@ import useScreenSize from "./utils/useScreenSize";
 export type Payment = {
   id: string;
   invoice: string;
-  status: string;
+  status: "paid" | "pending";
   amount: number;
   plan: string;
 };
@@ -21,9 +21,9 @@ export default function Home() {
   }
   return (
     <div>
-      <main className="p-4">
-        <header>
-          <h1>Payment History</h1>
+      <main className="p-4 max-w-[1248px]">
+        <header className="flex flex-col gap-2 mt-8 mb-8">
+          <h1 className="text-2xl font-bold">Payment History</h1>
           <div>
             Please reach out to our friendly team via team@codepulse.com if you
             have questions.
@@ -39,7 +39,7 @@ export default function Home() {
   );
 }
 
-const cols = ["Invoice", "Status", "Amount", "Plan", ""];
+const cols = ["Invoice", "Status", "Amount", "Plan"];
 
 function Label({ children }: { children: ReactNode }) {
   return <div className="text-gray-700">{children}</div>;
@@ -71,6 +71,20 @@ function PaymentData({
   );
 }
 
+function PaymentStatus({ status }: { status: Payment["status"] }) {
+  return (
+    <span
+      className={twMerge(
+        "rounded-full border-2 px-2 inline-flex justify-center item",
+        status === "paid" && "bg-green-50 text-green-500 border-green-100",
+        status === "pending" && "bg-gray-50 text-gray-500",
+      )}
+    >
+      {capitalizeWord(status)}
+    </span>
+  );
+}
+
 function capitalizeWord(word: string): string {
   return word[0].toUpperCase() + word.slice(1).toLowerCase();
 }
@@ -84,7 +98,7 @@ function PaymentsItem({ payment }: { payment: Payment }) {
       </PaymentData>
       <PaymentData>
         <Label>Status</Label>
-        {payment.status}
+        <PaymentStatus status={payment.status} />
       </PaymentData>
       <PaymentData>
         <Label>Amount</Label>
@@ -96,7 +110,7 @@ function PaymentsItem({ payment }: { payment: Payment }) {
       </PaymentData>
       <PaymentData className="flex justify-center border-b-0">
         <div>
-          <button className="text-blue-500">Download</button>
+          <button className="text-blue-500 font-bold">Download</button>
         </div>
       </PaymentData>
     </li>
@@ -105,27 +119,47 @@ function PaymentsItem({ payment }: { payment: Payment }) {
 
 function PaymentsTable({ payments }: { payments: Payment[] }) {
   return (
-    <table>
-      <thead>
-        <tr>
-          {cols.map((col, idx) => (
-            <th key={idx}>{col}</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {payments.map((payment) => (
-          <tr key={payment.id}>
-            <td>{payment.invoice}</td>
-            <td>{payment.status}</td>
-            <td>{payment.amount}</td>
-            <td>{payment.plan}plan</td>
-            <td>
-              <button>Download</button>
-            </td>
+    <div className="border-2 rounded-lg">
+      <table>
+        <thead className="border-b-2 w-full">
+          <tr>
+            {cols.map((col, idx) => (
+              <th
+                className="text-left p-4 min-w-[184px] text-gray-700"
+                key={idx}
+              >
+                {col}
+              </th>
+            ))}
+            <th className="w-full"></th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {payments.map((payment) => (
+            <tr className="border-b-2 last:border-b-0 " key={payment.id}>
+              <Td className="font-semibold">{payment.invoice}</Td>
+              <Td>
+                <PaymentStatus status={payment.status} />
+              </Td>
+              <Td>{`$${payment.amount.toFixed(2)}`}</Td>
+              <Td>{`${capitalizeWord(payment.plan)} Plan`}</Td>
+              <Td className="text-right">
+                <button className="text-blue-500 font-bold">Download</button>
+              </Td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
+}
+
+function Td({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return <td className={twMerge("w-[184px] p-6", className)}>{children}</td>;
 }
