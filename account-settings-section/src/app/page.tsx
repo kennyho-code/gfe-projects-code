@@ -1,78 +1,44 @@
-import {
-  DetailedHTMLProps,
-  LabelHTMLAttributes,
-  ReactNode,
-  InputHTMLAttributes,
-} from "react";
+import ProfileForm from "./ProfileForm";
 
-export default function Home() {
+export type User = {
+  id: number;
+  username: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+};
+
+async function getUserData() {
+  const userData = await fetch("http://localhost:3000/api/user");
+  const json = await userData.json();
+  return json.data as User;
+}
+
+export default async function Home() {
+  const userData = await getUserData();
   return (
-    <div>
-      <main>
+    <div className="flex justify-center lg:items-center h-screen">
+      <main className="flex flex-col gap-8 p-4 w-full max-w-[1216px]">
         <header>
-          <h1>Manage Your Account</h1>
-          <div>
+          <h1 className="text-2xl font-semibold">Manage Your Account</h1>
+          <div className="text-gray-500">
             Update your account details below for a tailored experience on our
             platform.
           </div>
         </header>
-        <div>
-          <div>Avatar</div>
-          <div>Change Avatar</div>
+        <div className="flex gap-4">
+          <div className="h-[104px] w-[104px] bg-black rounded-full" />
+          <div className="flex flex-col gap-2 justify-center">
+            <div>
+              <button className="border-2 rounded-lg  px-4 py-2">
+                Change Avatar
+              </button>
+            </div>
+            <div className="text-sm">At least 800x800 px. JPG or PNG only.</div>
+          </div>
         </div>
-
-        <form>
-          <div>
-            <div>
-              <Label>First name</Label>
-              <Input />
-            </div>
-
-            <div>
-              <Label>Last name</Label>
-              <Input />
-            </div>
-          </div>
-
-          <div>
-            <Label>Email</Label>
-            <Input />
-          </div>
-
-          <div>
-            <Label>UserName</Label>
-            <Input />
-          </div>
-
-          <div>Allows others to find and interact with you easily.</div>
-          <button>Save Changes</button>
-        </form>
+        <ProfileForm defaultData={userData} />
       </main>
     </div>
   );
-}
-
-interface LabelProps
-  extends DetailedHTMLProps<
-    LabelHTMLAttributes<HTMLLabelElement>,
-    HTMLLabelElement
-  > {
-  children: ReactNode;
-  className?: string;
-}
-
-function Label({ children, ...props }: LabelProps) {
-  return <label {...props}>{children}</label>;
-}
-
-interface InputProps
-  extends DetailedHTMLProps<
-    InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
-  > {
-  className?: string;
-}
-
-function Input({ className, ...props }: InputProps) {
-  return <input className={className} {...props} />;
 }
