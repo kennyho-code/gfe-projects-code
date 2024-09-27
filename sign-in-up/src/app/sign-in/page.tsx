@@ -16,7 +16,7 @@ function SigninPage() {
     setShowToast(true);
   }
   return (
-    <div className="bg-white p-4 rounded-md h-screen flex flex-col justify-center">
+    <div className="bg-white p-4 rounded-md h-screen flex flex-col justify-center items-center">
       {showToast && (
         <Toast
           onClick={() => {
@@ -26,7 +26,7 @@ function SigninPage() {
           Incorrect email or password
         </Toast>
       )}
-      <main className="flex flex-col lg:flex-row lg:gap-8">
+      <main className="flex flex-col lg:flex-row lg:gap-8 w-full max-w-[1200px]">
         <div className="flex flex-col justify-center lg:w-1/2">
           <div className="flex flex-col justify-center gap-8 lg:w-[384px] lg:mx-auto">
             <div>
