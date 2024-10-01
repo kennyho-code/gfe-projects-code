@@ -23,7 +23,7 @@ const stats: StatItem[] = [
 
 function StatsSection() {
   return (
-    <section className="flex flex-col gap-8 py-8">
+    <section className="flex flex-col gap-8 py-16">
       <div className="text-center flex flex-col gap-4">
         <H3>Statistics</H3>
         <H2>More than premium abstract imagery</H2>

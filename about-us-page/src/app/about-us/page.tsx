@@ -2,6 +2,8 @@ import Header from "./Header";
 import StatsSection from "./StatsSection";
 import TeamSection from "./TeamSection";
 import HeroSection from "./HeroSection";
+import ContactUsSection from "./ContactSection";
+import Footer from "./Footer";
 
 function AboutUsPage() {
   return (
@@ -12,13 +14,10 @@ function AboutUsPage() {
         <StatsSection />
         <TeamSection />
         <ContactUsSection />
+        <Footer />
       </div>
     </div>
   );
-}
-
-function ContactUsSection() {
-  return <section>contact us section</section>;
 }
 
 export default AboutUsPage;

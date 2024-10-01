@@ -4,7 +4,7 @@ import Text from "@/components/Text";
 
 function HeroSection() {
   return (
-    <section className="flex flex-col gap-8 lg:flex-row lg:items-center py-8">
+    <section className="flex flex-col gap-8 lg:flex-row lg:items-center py-16">
       <div className="flex flex-col gap-12">
         <div>
           <H2>Well crafted abstract gradient</H2>
