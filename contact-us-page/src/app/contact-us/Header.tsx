@@ -38,7 +38,7 @@ function MobileHeader() {
       </button>
       <aside
         className={twMerge(
-          "fixed bg-white h-screen w-full left-0 top-0 -translate-x-full transition-transform",
+          "z-20 fixed bg-white h-screen w-full left-0 top-0 -translate-x-full transition-transform",
           showSideNav && "translate-x-0",
         )}
       >

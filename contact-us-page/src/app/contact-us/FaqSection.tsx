@@ -1,11 +1,12 @@
 "use client";
+import Button from "@/components/Button";
 import H2 from "@/components/H2";
 import Text from "@/components/MyText";
 import { useState } from "react";
 
 function FaqSection() {
   return (
-    <section className="flex flex-col gap-8">
+    <section className="flex flex-col gap-8 py-16">
       <div className="text-center">
         <H2>Frequently asked questions</H2>
         <Text>Choose any questions you need</Text>
@@ -15,6 +16,28 @@ function FaqSection() {
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
+      </div>
+
+      <div className="flex flex-col shadow-lg rounded-lg gap-4 p-6 md:flex-row md:justify-between border-2">
+        <div className="flex flex-col gap-2">
+          <div className="text-lg font-bold">
+            Can&apos;t find the answer you&apos;re looking for?
+          </div>
+          <Text>Reach out to our customer support team.</Text>
+        </div>
+        <div
+          className="w-full md:w-auto md:min-w-[138px]
+"
+        >
+          <Button
+            onClick={() => {
+              /* Add your contact logic here */
+            }}
+            className="mt-2 w-full"
+          >
+            Get in touch
+          </Button>
+        </div>
       </div>
     </section>
   );
