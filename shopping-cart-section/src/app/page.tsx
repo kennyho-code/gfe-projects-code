@@ -2,13 +2,7 @@ import OrderSummary from "./OrderSummary";
 import { CartProvider } from "./utils/useCart";
 import OrderItems from "./OrderItems";
 
-async function validateItemsinRealTime() {
-  // do some validation logic when to see if the present data agrees with the
-  // users local cart
-}
-
 export default async function Home() {
-  await validateItemsinRealTime();
   return (
     <div className="bg-gray-100 p-4 min-h-screen">
       <main className="bg-white rounded-md min-h-screen p-4">

@@ -17,6 +17,11 @@ function OrderItem({ label, value }: OrderItemProps) {
   );
 }
 
+function validateItemsinRealTime() {
+  // do some validation logic when to see if the present data agrees with the
+  // users local cart
+}
+
 function OrderSummary() {
   const { cart } = useCart();
   const orderSummary = calculateOrderSummary(cart);
@@ -52,7 +57,13 @@ function OrderSummary() {
           <span className="text-4xl font-bold">${orderSummary.total}</span>
         </div>
 
-        <button className="bg-blue-800 text-white py-2 w-full font-semibold rounded-md">
+        <button
+          onClick={() => {
+            /// go to the checkout page and do price validation....for everything
+            validateItemsinRealTime();
+          }}
+          className="bg-blue-800 text-white py-2 w-full font-semibold rounded-md"
+        >
           Checkout
         </button>
       </div>
