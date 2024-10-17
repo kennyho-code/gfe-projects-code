@@ -9,9 +9,14 @@ import formatMoney from "./utils/formatMoney";
 interface ProductCardItemProps {
   product: Product;
   productUnit: ProductUnit;
+  onRemoveItem: () => void;
 }
 
-function ProductCard({ product, productUnit }: ProductCardItemProps) {
+function ProductCard({
+  product,
+  productUnit,
+  onRemoveItem,
+}: ProductCardItemProps) {
   return (
     <div className="flex flex-col md:flex-row gap-4 bg-white rounded-md">
       <div className="flex justify-center">
@@ -39,7 +44,7 @@ function ProductCard({ product, productUnit }: ProductCardItemProps) {
         <div className="flex justify-between">
           <div className="flex gap-4">
             <QuantityButton />
-            <button>Remove</button>
+            <button onClick={onRemoveItem}>Remove</button>
           </div>
           <div className="flex gap-2">
             <p className="text-lg font-semibold">

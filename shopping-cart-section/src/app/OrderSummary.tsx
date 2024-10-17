@@ -1,4 +1,7 @@
+"use client";
 import Badge from "./components/Badge";
+import calculateOrderSummary from "./utils/calculateOrderSummary";
+import { useCart } from "./utils/useCart";
 
 interface OrderItemProps {
   label: string;
@@ -15,12 +18,15 @@ function OrderItem({ label, value }: OrderItemProps) {
 }
 
 function OrderSummary() {
+  const { cart } = useCart();
+  const orderSummary = calculateOrderSummary(cart);
+
   return (
     <div className="lg:w-1/3">
       <div className="p-4 flex flex-col gap-4 border-2 rounded-md">
         <h2 className="text-2xl font-semibold">Order Summary</h2>
-        <OrderItem label="Subtotal" value="157.00" />
-        <OrderItem label="Shipping" value="0.00" />
+        <OrderItem label="Subtotal" value={orderSummary.subtotal} />
+        <OrderItem label="Shipping" value={orderSummary.shipping} />
 
         <div className="flex justify-between items-center">
           <Badge rounded text="GR8FRNTND24" />
@@ -43,7 +49,7 @@ function OrderSummary() {
         <div className="border-b border-dotted border-gray-300" />
         <div className="flex justify-between items-center">
           <span className="font-semibold  text-2xl">Total</span>
-          <span className="text-4xl font-bold">$157.50</span>
+          <span className="text-4xl font-bold">${orderSummary.total}</span>
         </div>
 
         <button className="bg-blue-800 text-white py-2 w-full font-semibold rounded-md">
