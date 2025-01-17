@@ -60,5 +60,5 @@ https://www.greatfrontend.com/projects
 | Marketing Website            | Senior       |       |   |
 | Hacker News Client           | Senior       |      |   |
 | E-commerce Website           | Nightmare    |      |   |
-| Chat AI                      | Nightmare    |      |  |
+| Chat AI                      | Nightmare    |   ✅     |  |[chat-gpt-clone](https://github.com/kennyho-code/gfe-projects-code/tree/main/chat-gpt-clone)
 | Pinsplash                    | Nightmare    |      |  |
