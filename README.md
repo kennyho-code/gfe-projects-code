@@ -5,7 +5,7 @@ https://www.greatfrontend.com/projects
 | Project Name                | Level        | Done  | GitHub Link                             |
 |-----------------------------|--------------|-------|-----------------------------------------|
 | Checkbox Component           | Starter      | ✅    | [checkbox-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/checkbox-component) |
-| Dropdown Menu Component      | Starter      | ❌    | |
+| Dropdown Menu Component      | Starter      |    | |
 | Footer Section (Simple)     | Starter      | ✅    | [footer-section-simple](https://github.com/kennyho-code/gfe-projects-code/tree/main/footer-section-simple) |
 | Hero Section (Feature bullets)| Starter    | ✅    | [hero-section-feature-bullets](https://github.com/kennyho-code/gfe-projects-code/tree/main/hero-section-feature-bullets) |
 | Hero Section (Simple)       | Starter      | ✅    | [footer-section-simple](https://github.com/kennyho-code/gfe-projects-code/tree/main/footer-section-simple) |
@@ -17,7 +17,7 @@ https://www.greatfrontend.com/projects
 | Radio Cards Component        | Starter      | ✅    | [radio-cards-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/radio-cards-component) |
 | Statistics Section           | Starter      | ✅    | [statistics-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/statistics-section) |
 | Tab Menu Component           | Starter      | ✅    | [tab-menu-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/tab-menu-component) |
-| Tabs Component               | Starter      | ❌    |  |
+| Tabs Component               | Starter      |     |  |
 | Team Section                 | Starter      | ✅    | [team-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/team-section) |
 | Textarea Component           | Starter      | ✅    | [textarea-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/textarea-component) |
 | Toast Component              | Starter      | ✅    | [toast-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/toast-component) |
@@ -34,7 +34,7 @@ https://www.greatfrontend.com/projects
 | Newsletter Section           | Mid          | ✅    | [newsletter-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/newsletter-section) |
 | Product Grid Section         | Mid          | ✅    | [product-grid-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/product-grid-section) |
 | Contact Section              | Mid          | ✅    | [contact-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/contact-section) |
-| Features Page                | Mid          | ✅    |  |
+| Features Page                | Mid          |       |  |
 | Features Section (Grid)     | Mid          | ✅    | [features-section-grid](https://github.com/kennyho-code/gfe-projects-code/tree/main/features-section-grid) |
 | Features Section (Side image)| Mid          | ✅    | [features-section-side-image](https://github.com/kennyho-code/gfe-projects-code/tree/main/features-section-side-image) |
 | FAQ Section                  | Mid          | ✅    | [faq-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/faq-section) |
@@ -44,21 +44,21 @@ https://www.greatfrontend.com/projects
 | Testimonials Section         | Mid          | ✅    | [testimonials-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/testimonials-section) |
 | Marketing Landing Page       | Mid          |    |  |
 | Contact Us Page              | Mid          | ✅    | [contact-us-page](https://github.com/kennyho-code/gfe-projects-code/tree/main/contact-us-page) |
-| Account Settings Section     | Mid          | ✅    | [GitHub](https://github.com/yourusername/account-settings-section) |
-| Billing History Section      | Mid          | ✅    | [GitHub](https://github.com/yourusername/billing-history-section) |
-| Billing Information Section  | Mid          | ✅    | [GitHub](https://github.com/yourusername/billing-information-section) |
-| Billing Plans Section        | Senior       | ✅    | [GitHub](https://github.com/yourusername/billing-plans-section) |
-| Cookie Consent               | Senior       | ✅    | [GitHub](https://github.com/yourusername/cookie-consent) |
-| Product Details Page         | Senior       | ✅    | [GitHub](https://github.com/yourusername/product-details-page) |
-| Shopping Cart Section        | Senior       | ✅    | [GitHub](https://github.com/yourusername/shopping-cart-section) |
-| Settings Page                | Senior       | ✅    | [GitHub](https://github.com/yourusername/settings-page) |
-| Storefront Page              | Senior       | ✅    | [GitHub](https://github.com/yourusername/storefront-page) |
-| Image Uploader               | Senior       | ✅    | [GitHub](https://github.com/yourusername/image-uploader) |
-| Product Details Section      | Senior       | ✅    | [GitHub](https://github.com/yourusername/product-details-section) |
-| Product Listing Section      | Senior       | ✅    | [GitHub](https://github.com/yourusername/product-listing-section) |
-| Product Reviews              | Senior       | ✅    | [GitHub](https://github.com/yourusername/product-reviews) |
-| Marketing Website            | Senior       | ✅    | [GitHub](https://github.com/yourusername/marketing-website) |
-| Hacker News Client           | Senior       | ✅    | [GitHub](https://github.com/yourusername/hacker-news-client) |
-| E-commerce Website           | Nightmare    | ✅    | [GitHub](https://github.com/yourusername/e-commerce-website) |
-| Chat AI                      | Nightmare    | ✅    | [GitHub](https://github.com/yourusername/chat-ai) |
-| Pinsplash                    | Nightmare    | ✅    | [GitHub](https://github.com/yourusername/pinsplash) |
+| Account Settings Section     | Mid          | ✅    | [account-settings-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/account-settings-section) |
+| Billing History Section      | Mid          |    |  |
+| Billing Information Section  | Mid          | ✅    | [billing-information-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/billing-information-section) |
+| Billing Plans Section        | Senior       | ✅    | [billing-plans-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/billing-plans-section) |
+| Cookie Consent               | Senior       | ✅    | [cookie-consent](https://github.com/kennyho-code/gfe-projects-code/tree/main/cookie-consent) |
+| Product Details Page         | Senior       |    |  |
+| Shopping Cart Section        | Senior       | ✅    | [shopping-cart-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/shopping-cart-section) |
+| Settings Page                | Senior       |       |  |
+| Storefront Page              | Senior       |       | |
+| Image Uploader               | Senior       |       |  |
+| Product Details Section      | Senior       |       |  |
+| Product Listing Section      | Senior       |       | |
+| Product Reviews              | Senior       |       |  |
+| Marketing Website            | Senior       |       |   |
+| Hacker News Client           | Senior       |      |   |
+| E-commerce Website           | Nightmare    |      |   |
+| Chat AI                      | Nightmare    |      |  |
+| Pinsplash                    | Nightmare    |      |  |
