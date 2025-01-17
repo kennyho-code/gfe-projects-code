@@ -30,20 +30,20 @@ https://www.greatfrontend.com/projects
 | Collections Grid Section     | Starter      | ✅    | [collections-grid-section-react](https://github.com/kennyho-code/gfe-projects-code/tree/main/collections-grid-section-react) |
 | Footer (Multi-column)        | Mid          | ✅    | [footer-multi-column](https://github.com/kennyho-code/gfe-projects-code/tree/main/footer-multi-column) |
 | Navbar Component             | Mid          | ✅    | [navbar-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/navbar-component) |
-| Navbar (E-commerce)          | Mid          | ✅    | [GitHub](https://github.com/yourusername/navbar-e-commerce) |
-| Newsletter Section           | Mid          | ✅    | [GitHub](https://github.com/yourusername/newsletter-section) |
-| Product Grid Section         | Mid          | ✅    | [GitHub](https://github.com/yourusername/product-grid-section) |
-| Contact Section              | Mid          | ✅    | [GitHub](https://github.com/yourusername/contact-section) |
-| Features Page                | Mid          | ✅    | [GitHub](https://github.com/yourusername/features-page) |
-| Features Section (Grid)     | Mid          | ✅    | [GitHub](https://github.com/yourusername/features-section-grid) |
-| Features Section (Side image)| Mid          | ✅    | [GitHub](https://github.com/yourusername/features-section-side-image) |
-| FAQ Section                  | Mid          | ✅    | [GitHub](https://github.com/yourusername/faq-section) |
-| Pricing Section (Tiers)      | Mid          | ✅    | [GitHub](https://github.com/yourusername/pricing-section-tiers) |
-| Order Success Section        | Mid          | ✅    | [GitHub](https://github.com/yourusername/order-success-section) |
-| Password Section             | Mid          | ✅    | [GitHub](https://github.com/yourusername/password-section) |
-| Testimonials Section         | Mid          | ✅    | [GitHub](https://github.com/yourusername/testimonials-section) |
-| Marketing Landing Page       | Mid          | ✅    | [GitHub](https://github.com/yourusername/marketing-landing-page) |
-| Contact Us Page              | Mid          | ✅    | [GitHub](https://github.com/yourusername/contact-us-page) |
+| Navbar (E-commerce)          | Mid          | ✅    | [navbar-e-commerce](https://github.com/kennyho-code/gfe-projects-code/tree/main/navbar-e-commerce) |
+| Newsletter Section           | Mid          | ✅    | [newsletter-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/newsletter-section) |
+| Product Grid Section         | Mid          | ✅    | [product-grid-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/product-grid-section) |
+| Contact Section              | Mid          | ✅    | [contact-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/contact-section) |
+| Features Page                | Mid          | ✅    |  |
+| Features Section (Grid)     | Mid          | ✅    | [features-section-grid](https://github.com/kennyho-code/gfe-projects-code/tree/main/features-section-grid) |
+| Features Section (Side image)| Mid          | ✅    | [features-section-side-image](https://github.com/kennyho-code/gfe-projects-code/tree/main/features-section-side-image) |
+| FAQ Section                  | Mid          | ✅    | [faq-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/faq-section) |
+| Pricing Section (Tiers)      | Mid          | ✅    | [pricing-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/pricing-section) |
+| Order Success Section        | Mid          | ✅    | [order-success-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/order-success-section) |
+| Password Section             | Mid          | ✅    | [password-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/password-section) |
+| Testimonials Section         | Mid          | ✅    | [testimonials-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/testimonials-section) |
+| Marketing Landing Page       | Mid          |    |  |
+| Contact Us Page              | Mid          | ✅    | [contact-us-page](https://github.com/kennyho-code/gfe-projects-code/tree/main/contact-us-page) |
 | Account Settings Section     | Mid          | ✅    | [GitHub](https://github.com/yourusername/account-settings-section) |
 | Billing History Section      | Mid          | ✅    | [GitHub](https://github.com/yourusername/billing-history-section) |
 | Billing Information Section  | Mid          | ✅    | [GitHub](https://github.com/yourusername/billing-information-section) |
