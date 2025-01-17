@@ -11,25 +11,25 @@ https://www.greatfrontend.com/projects
 | Hero Section (Simple)       | Starter      | ✅    | [footer-section-simple](https://github.com/kennyho-code/gfe-projects-code/tree/main/footer-section-simple) |
 | 404 Section                  | Starter      | ✅    | [404-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/404-section) |
 | Badge Component              | Starter      | ✅    | [badge-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/badge-component) |
-| Pagination Component         | Starter      | ✅    | [GitHub](https://github.com/yourusername/pagination-component) |
-| Pricing Section (Single)    | Starter      | ✅    | [GitHub](https://github.com/yourusername/pricing-section-single) |
-| Product Specifications Section| Starter    | ✅    | [GitHub](https://github.com/yourusername/product-specifications-section) |
-| Radio Cards Component        | Starter      | ✅    | [GitHub](https://github.com/yourusername/radio-cards-component) |
-| Statistics Section           | Starter      | ✅    | [GitHub](https://github.com/yourusername/statistics-section) |
-| Tab Menu Component           | Starter      | ✅    | [GitHub](https://github.com/yourusername/tab-menu-component) |
-| Tabs Component               | Starter      | ❌    | [GitHub](https://github.com/yourusername/tabs-component) |
-| Team Section                 | Starter      | ✅    | [GitHub](https://github.com/yourusername/team-section) |
-| Textarea Component           | Starter      | ✅    | [GitHub](https://github.com/yourusername/textarea-component) |
-| Toast Component              | Starter      | ✅    | [GitHub](https://github.com/yourusername/toast-component) |
-| Tooltip Component            | Starter      | ✅    | [GitHub](https://github.com/yourusername/tooltip-component) |
-| Testimonial Card             | Starter      | ✅    | [GitHub](https://github.com/yourusername/testimonial-card) |
-| Blog Card                    | Starter      | ✅    | [GitHub](https://github.com/yourusername/blog-card) |
-| Profile Card                 | Starter      | ✅    | [GitHub](https://github.com/yourusername/profile-card) |
-| Button Component             | Starter      | ✅    | [GitHub](https://github.com/yourusername/button-component) |
-| Text Input Component         | Starter      | ✅    | [GitHub](https://github.com/yourusername/text-input-component) |
-| Collections Grid Section     | Starter      | ✅    | [GitHub](https://github.com/yourusername/collections-grid-section) |
-| Footer (Multi-column)        | Mid          | ✅    | [GitHub](https://github.com/yourusername/footer-multi-column) |
-| Navbar Component             | Mid          | ✅    | [GitHub](https://github.com/yourusername/navbar-component) |
+| Pagination Component         | Starter      | ✅    | [pagination-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/pagination-component) |
+| Pricing Section (Single)    | Starter      | ✅    | [pricing-section-single](https://github.com/kennyho-code/gfe-projects-code/tree/main/pricing-section-single) |
+| Product Specifications Section| Starter    | ✅    | [product-specifications-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/product-specifications-section) |
+| Radio Cards Component        | Starter      | ✅    | [radio-cards-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/radio-cards-component) |
+| Statistics Section           | Starter      | ✅    | [statistics-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/statistics-section) |
+| Tab Menu Component           | Starter      | ✅    | [tab-menu-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/tab-menu-component) |
+| Tabs Component               | Starter      | ❌    |  |
+| Team Section                 | Starter      | ✅    | [team-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/team-section) |
+| Textarea Component           | Starter      | ✅    | [textarea-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/textarea-component) |
+| Toast Component              | Starter      | ✅    | [toast-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/toast-component) |
+| Tooltip Component            | Starter      | ✅    | [tooltip-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/tooltip-component) |
+| Testimonial Card             | Starter      | ✅    | [testimonial-card](https://github.com/kennyho-code/gfe-projects-code/tree/main/testimonial-card) |
+| Blog Card                    | Starter      | ✅    | [blog-card](https://github.com/kennyho-code/gfe-projects-code/tree/main/blog-card) |
+| Profile Card                 | Starter      | ✅    | [profile-card](https://github.com/kennyho-code/gfe-projects-code/tree/main/profile-card) |
+| Button Component             | Starter      | ✅    | [button-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/button-component) |
+| Text Input Component         | Starter      | ✅    | [text-input-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/text-input-component) |
+| Collections Grid Section     | Starter      | ✅    | [collections-grid-section-react](https://github.com/kennyho-code/gfe-projects-code/tree/main/collections-grid-section-react) |
+| Footer (Multi-column)        | Mid          | ✅    | [footer-multi-column](https://github.com/kennyho-code/gfe-projects-code/tree/main/footer-multi-column) |
+| Navbar Component             | Mid          | ✅    | [navbar-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/navbar-component) |
 | Navbar (E-commerce)          | Mid          | ✅    | [GitHub](https://github.com/yourusername/navbar-e-commerce) |
 | Newsletter Section           | Mid          | ✅    | [GitHub](https://github.com/yourusername/newsletter-section) |
 | Product Grid Section         | Mid          | ✅    | [GitHub](https://github.com/yourusername/product-grid-section) |
