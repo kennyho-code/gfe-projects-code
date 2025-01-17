@@ -4,13 +4,13 @@ https://www.greatfrontend.com/projects
 
 | Project Name                | Level        | Done  | GitHub Link                             |
 |-----------------------------|--------------|-------|-----------------------------------------|
-| Checkbox Component           | Starter      | ✅    | [GitHub](https://github.com/yourusername/checkbox-component) |
-| Dropdown Menu Component      | Starter      | ❌    | [GitHub](https://github.com/yourusername/dropdown-menu-component) |
-| Footer Section (Simple)     | Starter      | ❌    | [GitHub](https://github.com/yourusername/footer-section-simple) |
-| Hero Section (Feature bullets)| Starter    | ✅    | [GitHub](https://github.com/yourusername/hero-section-feature-bullets) |
-| Hero Section (Simple)       | Starter      | ✅    | [GitHub](https://github.com/yourusername/hero-section-simple) |
-| 404 Section                  | Starter      | ✅    | [GitHub](https://github.com/yourusername/404-section) |
-| Badge Component              | Starter      | ✅    | [GitHub](https://github.com/yourusername/badge-component) |
+| Checkbox Component           | Starter      | ✅    | [checkbox-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/checkbox-component) |
+| Dropdown Menu Component      | Starter      | ❌    | |
+| Footer Section (Simple)     | Starter      | ✅    | [footer-section-simple](https://github.com/kennyho-code/gfe-projects-code/tree/main/footer-section-simple) |
+| Hero Section (Feature bullets)| Starter    | ✅    | [hero-section-feature-bullets](https://github.com/kennyho-code/gfe-projects-code/tree/main/hero-section-feature-bullets) |
+| Hero Section (Simple)       | Starter      | ✅    | [footer-section-simple](https://github.com/kennyho-code/gfe-projects-code/tree/main/footer-section-simple) |
+| 404 Section                  | Starter      | ✅    | [404-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/404-section) |
+| Badge Component              | Starter      | ✅    | [badge-component](https://github.com/kennyho-code/gfe-projects-code/tree/main/badge-component) |
 | Pagination Component         | Starter      | ✅    | [GitHub](https://github.com/yourusername/pagination-component) |
 | Pricing Section (Single)    | Starter      | ✅    | [GitHub](https://github.com/yourusername/pricing-section-single) |
 | Product Specifications Section| Starter    | ✅    | [GitHub](https://github.com/yourusername/product-specifications-section) |
