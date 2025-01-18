@@ -45,20 +45,20 @@ https://www.greatfrontend.com/projects
 | Marketing Landing Page       | Mid          |    |  |
 | Contact Us Page              | Mid          | ✅    | [contact-us-page](https://github.com/kennyho-code/gfe-projects-code/tree/main/contact-us-page) |
 | Account Settings Section     | Mid          | ✅    | [account-settings-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/account-settings-section) |
-| Billing History Section      | Mid          |    |  |
+| Billing History Section      | Mid          |       |  |
 | Billing Information Section  | Mid          | ✅    | [billing-information-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/billing-information-section) |
 | Billing Plans Section        | Senior       | ✅    | [billing-plans-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/billing-plans-section) |
 | Cookie Consent               | Senior       | ✅    | [cookie-consent](https://github.com/kennyho-code/gfe-projects-code/tree/main/cookie-consent) |
-| Product Details Page         | Senior       |    |  |
+| Product Details Page         | Senior       |       |  |
 | Shopping Cart Section        | Senior       | ✅    | [shopping-cart-section](https://github.com/kennyho-code/gfe-projects-code/tree/main/shopping-cart-section) |
 | Settings Page                | Senior       |       |  |
-| Storefront Page              | Senior       |       | |
+| Storefront Page              | Senior       |       |  |
 | Image Uploader               | Senior       |       |  |
 | Product Details Section      | Senior       |       |  |
-| Product Listing Section      | Senior       |       | |
+| Product Listing Section      | Senior       |       |  |
 | Product Reviews              | Senior       |       |  |
 | Marketing Website            | Senior       |       |   |
 | Hacker News Client           | Senior       |      |   |
 | E-commerce Website           | Nightmare    |      |   |
-| Chat AI                      | Nightmare    |   ✅     |  |[chat-gpt-clone](https://github.com/kennyho-code/gfe-projects-code/tree/main/chat-gpt-clone)
+| Chat AI                      | Nightmare    |   ✅ | [chat-gpt-clone](https://github.com/kennyho-code/gfe-projects-code/tree/main/chat-gpt-clone) |
 | Pinsplash                    | Nightmare    |      |  |
